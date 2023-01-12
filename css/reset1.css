@@ -14,12 +14,6 @@ html {
   font-size: 62.5%;
 }
 
-@media only screen and (max-width: 800px) {
-  html {
-    font-size: 50%;
-  }
-}
-
 body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
