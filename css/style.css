@@ -60,6 +60,11 @@ main .two {
     border-bottom: 1px gray solid;
 }
 
+.two .top h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
 .two .top .ratings {
     display: flex;
 }
