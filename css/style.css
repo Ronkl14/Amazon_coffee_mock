@@ -1,5 +1,10 @@
 :root {
     --bold-font: 700;
+    --link-color:#007185;
+    --green-text: #007600;
+    --button-yellow:#FFD814;
+    --button-orange: #FFA41C;
+
 }
 
 body {
@@ -13,8 +18,37 @@ body {
     font-weight: var(--bold-font);
 }
 
-nav {
+a {
+    color: var(--link-color);
+}
+
+.greenish {
+    color: var(--green-text);
+}
+
+.btn {
     width:100%;
+    border-radius: 20px;
+    height: 3rem;
+    border:none;
+}
+
+.down-symbol {
+	background: url('/assets/img/logo-sprite.png') no-repeat -184px -342px;
+	width: 13px;
+	height: 8px;
+}
+
+nav {
+    width:inherit;
+}
+
+.btn-yellow {
+    background-color: var(--button-yellow);
+}
+
+.btn-orange {
+    background-color: var(--button-orange);
 }
 
 .navbar-main {
@@ -77,16 +111,16 @@ main .two {
     display: flex;
 }
 
-.two .second .price {
+.price {
     display:flex;
 }
 
-.two .second .price .price-large {
-    font-size:2rem;
+.price-large {
+    font-size:2.8rem;
 }
 
-.two .second .price .price-small {
-    font-size:1.4rem;
+.price-small {
+    font-size:1.3rem;
 }
 
 .two .third .colors .brown,
@@ -113,7 +147,6 @@ main .two {
 .two .fifth h2 {
     font-size: 1.6rem;
 }
-}
 
 .two .fourth .reg {
     margin-left:3rem;
@@ -127,4 +160,34 @@ main .two {
 
 main .three {
   width: 16%;
+}
+
+.three .greenish {
+    font-size: 1.8rem;
+}
+
+.three .drop-btn {
+    display: flex;
+    width:6rem;
+    height:2.2rem;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.three .seller-info {
+    display:flex;
+    width:100%;
+    font-size:1.2rem;
+    border-bottom: 1px gray solid;
+
+}
+
+.three .seller-label {
+    color: #565959;
+    margin-right: 1rem;
+}
+
+.three .smaller-link {
+    font-size: 1.2rem;
 }
