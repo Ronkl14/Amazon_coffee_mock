@@ -1,8 +1,16 @@
+:root {
+    --bold-font: 700;
+}
+
 body {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.bolded {
+    font-weight: var(--bold-font);
 }
 
 nav {
@@ -102,8 +110,9 @@ main .two {
     width: 100%;
 }
 
-.two .fourth .bolded {
-    font-weight: bold;
+.two .fifth h2 {
+    font-size: 1.6rem;
+}
 }
 
 .two .fourth .reg {
