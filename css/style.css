@@ -272,7 +272,7 @@ nav {
 }
 
 .search-bar .bar .search-btn:hover {
-    background-color: #f3a847;
+  background-color: #f3a847;
 }
 
 .search-bar .bar .search-btn-sym {
@@ -523,4 +523,26 @@ main .three {
   font-size: 1.6rem;
   font-weight: 700;
   padding: 1.5rem 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  main .one, main .two, main .three {
+    width:100vw;
+  }
+
+  .navbar-main .deliver,
+  .navbar-main .lang,
+  .navbar-main .sign,
+  .navbar-main .return,
+  .navbar-main .search-bar .left-drop,
+  .navbar-main .cart p,
+  .navbar-secondary {
+    display: none;
+  }
+
 }
