@@ -8,6 +8,7 @@
   --sec-nav: #232f3e;
   --border-search: 3px solid #ff9900;
   --nav-small-font-color: #ccc;
+  --border: 1px solid #d5d9d9;
 }
 
 body {
@@ -54,6 +55,7 @@ a:hover {
   border-radius: 20px;
   height: 3rem;
   border: none;
+  margin:.4rem 0;
 }
 
 .down-symbol {
@@ -70,8 +72,18 @@ nav {
   background-color: var(--button-yellow);
 }
 
+.btn-yellow:hover {
+    cursor: pointer;
+    background-color: #f7ca00;
+}
+
 .btn-orange {
   background-color: var(--button-orange);
+}
+
+.btn-orange:hover {
+    cursor: pointer;
+    background-color: #fa8900;
 }
 
 .navbar-main {
@@ -332,7 +344,7 @@ main {
   gap: 2.5rem;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid gray;
+  border-bottom: var(--border);
 }
 
 main > div {
@@ -361,15 +373,19 @@ main .one {
   justify-content: center;
 }
 
-.one .img-roller {
-  /* display:flex; */
-}
-
-.one .image-roller img {
+.one .image-roller img,
+.third img {
   margin: 0 0.2rem;
   border: 1px solid gray;
   border-radius: 0.3rem;
+}
 
+.one .image-roller img:hover{
+    cursor: pointer;
+}
+
+.third img:hover {
+    cursor: pointer;
 }
 
 main .two {
@@ -380,7 +396,8 @@ main .two {
 .two .second,
 .two .third,
 .two .fourth {
-  border-bottom: 1px gray solid;
+  border-bottom: var(--border);
+  margin-bottom:1rem;
 }
 
 .two .top h2 {
@@ -391,10 +408,12 @@ main .two {
 
 .two .top .ratings {
   display: flex;
+  gap:2rem;
 }
 
 .price {
   display: flex;
+  margin:1.5rem 0;
 }
 
 .price-large {
@@ -424,6 +443,7 @@ main .two {
 .two .fourth {
   display: flex;
   width: 100%;
+  line-height: 2.5rem;
 }
 
 .two .fifth h2 {
@@ -454,13 +474,19 @@ main .three {
   font-size: 1.1rem;
   justify-content: center;
   align-items: center;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+.three .drop-btn:hover {
+    cursor: pointer;
+    background-color: #e3e6e6;
 }
 
 .three .seller-info {
   display: flex;
   width: 100%;
   font-size: 1.2rem;
-  border-bottom: 1px gray solid;
+  border-bottom: var(--border);
 }
 
 .three .seller-label {
@@ -473,7 +499,7 @@ main .three {
 }
 
 .three .main-container {
-  border: 1px solid #d5d9d9;
+  border: var(--border);
   border-radius: 0.8rem;
   padding: 1.4rem 1.8rem;
 }
@@ -510,7 +536,7 @@ main .three {
     gap:0.5rem;
 }
 
-.price {
+.recommend .price {
     color:#B12704;
     font-size: 1.8rem;
     font-weight: 400;
