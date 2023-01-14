@@ -17,12 +17,32 @@ body {
   align-items: center;
 }
 
+body > p {
+    align-self: flex-start;
+    margin-left:10rem;
+}
+
+body > p > a {
+    font-size: 1.2rem;
+    color: #565959;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > p > a:hover {
+    text-decoration: underline;
+    color: #565959;
+}
+
 .bolded {
   font-weight: var(--bold-font);
 }
 
 a {
   color: var(--link-color);
+}
+
+a:hover {
+    color:#c7511f;
 }
 
 .greenish {
@@ -78,7 +98,8 @@ nav {
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 1rem 0;
+  padding: 1rem .5rem;
+  margin: 0 .5rem;
   /* flex-direction: column; */
 }
 
@@ -86,8 +107,28 @@ nav {
   /* border: 2px solid black; */
   font-size: 1.4rem;
   color:white;
-  padding:.8rem 1.2rem;
-  margin: .2rem;
+  padding:.7rem 0rem;
+  margin: 0 .2rem;
+}
+
+.navbar-secondary p {
+    padding:.3rem 1rem;
+}
+
+.navbar-main > li:hover,
+.navbar-secondary li p:hover,
+.navbar-secondary li .all:hover {
+    border: 1px white solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.navbar-secondary li .all p:hover{
+    border:none;
+}
+
+.navbar-main .search-bar:hover{
+    border:none;
 }
 
 .nav-small {
@@ -276,6 +317,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap:.5rem;
+    padding:0 .5rem;
 }
 
 .left-nav {
@@ -290,6 +332,7 @@ main {
   gap: 2.5rem;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid gray;
 }
 
 main > div {
@@ -301,6 +344,15 @@ main .one {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.stick {
+    position: sticky;
+    top:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .one .img-wrap {
@@ -317,6 +369,7 @@ main .one {
   margin: 0 0.2rem;
   border: 1px solid gray;
   border-radius: 0.3rem;
+
 }
 
 main .two {
@@ -424,3 +477,66 @@ main .three {
   border-radius: 0.8rem;
   padding: 1.4rem 1.8rem;
 }
+
+.recommend {
+
+}
+
+.recommend-container {
+    width:16rem;
+}
+
+.img-rec-wrap {
+    width:100%;
+}
+
+.recommend img {
+    width:100%;
+}
+
+.rec-stars {
+    background: url('/assets/img/4-star.png') no-repeat -170px 0;
+	width: 80px;
+	height: 15px;
+}
+
+.rec-rating {
+    display: flex;
+    gap:.5rem;
+}
+
+.rec-price {
+    display: flex;
+    gap:0.5rem;
+}
+
+.price {
+    color:#B12704;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.prime-sym {
+    background: url('/assets/img/prime-sprite.png') no-repeat -439px -398px;
+	width: 70px;
+	height: 20px;
+}
+
+.img-rec-wrap a:hover {
+    text-decoration: underline;
+}
+
+.recommend {
+    display: flex;
+    gap:3.3rem;
+    margin:2.5rem 0 ;
+}
+
+.recommend-head {
+    color: #ce6c0a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.5rem 0; 
+}
+
